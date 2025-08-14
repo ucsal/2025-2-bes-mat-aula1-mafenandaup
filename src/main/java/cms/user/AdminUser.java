@@ -1,34 +1,36 @@
 package cms.user;
 
-public class AdminUser {
-	private final int id;
-	private final String nome;
-	private final String email;
-	private final String password;
+public class AdminUser extends User {
 
 	public AdminUser(int id, String nome, String email, String password) {
-		this.id = id;
-		this.nome = nome;
-		this.email = email;
-		this.password = password;
+		super( id, nome, email, password);
 	}
 
+	@Override
 	public int getId() {
-		return id;
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
+	@Override
 	public String getNome() {
-		return nome;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
+	@Override
 	public String getEmail() {
-		return email;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
+	@Override
 	public boolean checkPassword(String p) {
-		return password.equals(p);
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	public void deleteContent(int contentId) {
-		/* exclusivo do admin */ }
+	/* exclusivo do admin */ }
+
 }
