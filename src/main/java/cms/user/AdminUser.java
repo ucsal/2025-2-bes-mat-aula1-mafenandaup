@@ -7,6 +7,6 @@ public class AdminUser extends User {
 	    }
 
 	public void deleteContent(int contentId) {
-		/* exclusivo do admin */ }
-
+		System.out.println("conteúdo "+contentId+" deletado com sucesso!");
+	}
 }

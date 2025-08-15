@@ -8,5 +8,10 @@ public class EditorUser extends User {
 
 
 	public void editContent(int contentId, String body) {
-		/* exclusivo do editor */ }
+		if (body == null || body.isBlank()) {
+	        throw new IllegalArgumentException("Não são permitidos campos vazios.");
+	    }
+	    System.out.println("Conteúdo editado com sucesso! ID: " + contentId + ". corpo: " + body);
+		}
 }
+
