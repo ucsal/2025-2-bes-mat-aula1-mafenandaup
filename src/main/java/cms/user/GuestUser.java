@@ -7,6 +7,6 @@ public class GuestUser extends User {
     }
 
 	public void viewContent(int contentId) {
-		System.out.println("conteúdo "+contentId+" (A EDITAR) mostrado com sucesso!");
+		System.out.println("conteúdo: "+contentId+"");
 }
 }
