@@ -6,7 +6,7 @@ public class GuestUser extends User {
         super(id, nome, email, password);
     }
 
-	public void viewContent(int contentId) {
-		System.out.println("conteúdo: "+contentId+"");
+	public void viewContent(int contentId,String body) {
+		System.out.println("ID do conteúdo: "+contentId+ "Corpo do conteúdo: " +body);
 }
 }
